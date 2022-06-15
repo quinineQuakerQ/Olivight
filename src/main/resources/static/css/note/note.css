@@ -1,0 +1,11 @@
+/*
+this is css notes section:
+
+css file placed under path:  resources/static/css
+    sample calling:
+    <link rel="stylesheet"
+          href="../static/css/file_name.css"
+          th:href="@{/css/file_name.css}">
+
+
+*/

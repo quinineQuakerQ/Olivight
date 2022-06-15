@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1">
+    <title>Demo</title>
+    <link rel="stylesheet"
+          href="../static/css/sample/sample.css"
+          th:href="@{/css/sample/sample.css}">
+
+    <!-- tab icon
+    <link rel="icon" th:href="@{/icons/tab_icon.png}">
+    -->
+
+    <!-- cdn css
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/LATEST-VERSION">
+     -->
+</head>
+
+<body>
+<br>
+Alhamdulillah.
+Peace be upon you.
+<br><br><br>
+thymeleaf needs web link at the top. that is::->    xmlns:th="http://www.thymeleaf.org"
+<br><br>
+you can specify content language:
+<!-- <html lang="en" xmlns:th="http://www.thymeleaf.org"> -->
+<br><br>
+
+other necessary info like characterset, viewport, page title, site tab icon, css, meta data etc:
+<br><br>
+
+<br><br>
+
+icons,images or svg should be inside webapp folder. you can create nested folder but refer correct path to html.
+<br><br>
+
+please include js if needed on body tag: to reduce page loading
+<br><br>
+
+normal html does not require extra action.
+if we use post mapping then,
+thymeleaf form require th:action="@{the name of the view that is called}".
+<br>
+for more details visit thymeleaf website
+</body>
+</html>
