@@ -9,7 +9,8 @@ public class SampleViewController {
 
     @RequestMapping("demo")
     public String showIndex() {
-        return "sample";
+        return "/sample/sample";
     }
 
+    
 }

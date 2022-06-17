@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="height=device-height,width=device-width,initial-scale=1">
+    <title>Explorer</title>
+
+    <link rel="stylesheet"
+          href="../static/css/explorer/explorer.css"
+          th:href="@{/css/explorer/explorer.css}">
+
+
+    <link rel="icon"
+          href="../static/image/tab_icon/tab_icon.jpg"
+          th:href="@{/image/tab_icon/tab_icon.jpg}">
+
+    <!-- cdn css
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/LATEST-VERSION">
+     -->
+</head>
+
+<body>
+<div id="view" th:object="${organisation}">
+
+    <p>
+
+    <span th:text="'Organisation : ' + ${organisation.name} + ' ! '" > </span>
+    <br><br>
+    <span th:text="'Visited by : ' + ${census.visitors_amount} + ' People! [This Year]'" > </span>
+
+    </p>
+
+
+</div>
+</body>
+</html>
