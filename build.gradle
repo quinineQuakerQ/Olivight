@@ -15,7 +15,7 @@ bootWar {
 }
 
 application {
-	mainClass = 'com.skyblue.mart.MartApplication'
+	mainClass = 'biz.olivight.OlivightApplication'
 }
 
 springBoot {
