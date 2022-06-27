@@ -10,6 +10,10 @@ group = 'biz.olivight'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
+war {
+	webAppDirectory = file('src/main/webapp')
+}
+
 bootWar {
 	enabled=true
 }
