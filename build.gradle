@@ -23,21 +23,21 @@ bootWar {
 	webAppDirectory = file('src/main/webapp')
 	from 'src/main/java/biz/olivight' // adds a file-set to the root of the archive
 	manifest {
-		attributes "Main-Class": "biz.olivight.OlivightApplication"
+		attributes "Starter-Class": "biz.olivight.OlivightApplication"
 	}
 }
 
 application {
 	mainClassName = 'biz.olivight.OlivightApplication'
 	manifest {
-		attributes "Main-Class": "biz.olivight.OlivightApplication"
+		attributes "Starter-Class": "biz.olivight.OlivightApplication"
 	}
 }
 
 springBoot {
 	mainClass = 'biz.olivight.OlivightApplication'
 	manifest {
-		attributes "Main-Class": "biz.olivight.OlivightApplication"
+		attributes "Starter-Class": "biz.olivight.OlivightApplication"
 	}
 }
 
