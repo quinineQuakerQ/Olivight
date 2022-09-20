@@ -6,7 +6,7 @@ server.port=7298
 LAN Host Configuration: [only home wifi network]
 //port with static lan ip address with other necessary items
 server.port= 7298
-server.address = 192.168.10.21
+server.address = 192.168.22.36
 
 
 Public Ip Configuration: [Real Time Access]
