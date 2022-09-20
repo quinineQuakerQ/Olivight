@@ -12,8 +12,11 @@ sourceCompatibility = '11'
 
 war {
 	webAppDirectory = file('src/main/webapp')
-	from 'src/main/java/biz/olivight' // adds a file-set to the root of the archive
+	from 'src/main/java/biz/olivight'
 	mainClassName = 'biz.olivight.OlivightApplication'
+	manifest {
+		attributes('Starter-Class': 'src/main/java/biz/olivight/biz/olivight/OlivightApplication')
+	}
 }
 
 bootWar {
@@ -21,20 +24,22 @@ bootWar {
 	webAppDirectory = file('src/main/webapp')
 	from 'src/main/java/biz/olivight'
 	mainClassName = 'biz.olivight.OlivightApplication'
-
+	manifest {
+		attributes('Starter-Class': 'src/main/java/biz/olivight/biz/olivight/OlivightApplication')
+	}
 }
 
 application {
 	mainClassName = 'biz.olivight.OlivightApplication'
 	manifest {
-		attributes "Starter-Class": "biz.olivight.OlivightApplication"
+		attributes('Starter-Class': 'src/main/java/biz/olivight/biz/olivight/OlivightApplication')
 	}
 }
 
 springBoot {
-	mainClass = 'biz.olivight.OlivightApplication'
+	mainClassName = 'biz.olivight.OlivightApplication'
 	manifest {
-		attributes "Starter-Class": "biz.olivight.OlivightApplication"
+		attributes('Starter-Class': 'src/main/java/biz/olivight/biz/olivight/OlivightApplication')
 	}
 }
 
