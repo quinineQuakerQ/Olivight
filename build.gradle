@@ -13,18 +13,15 @@ sourceCompatibility = '11'
 war {
 	webAppDirectory = file('src/main/webapp')
 	from 'src/main/java/biz/olivight' // adds a file-set to the root of the archive
-	manifest {
-		attributes "Main-Class": "biz.olivight.OlivightApplication"
-	}
+	mainClassName = 'biz.olivight.OlivightApplication'
 }
 
 bootWar {
 	enabled=true
 	webAppDirectory = file('src/main/webapp')
-	from 'src/main/java/biz/olivight' // adds a file-set to the root of the archive
-	manifest {
-		attributes "Starter-Class": "biz.olivight.OlivightApplication"
-	}
+	from 'src/main/java/biz/olivight'
+	mainClassName = 'biz.olivight.OlivightApplication'
+
 }
 
 application {
