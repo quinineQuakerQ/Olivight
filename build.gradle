@@ -12,6 +12,11 @@ sourceCompatibility = '11'
 
 war {
 	webAppDirectory = file('src/main/webapp')
+	manifest {
+		attributes(
+				'Main-Class': 'biz.olivight.OlivightApplication'
+			)
+		}
 }
 
 bootWar {
