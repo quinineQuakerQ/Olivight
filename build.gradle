@@ -13,22 +13,30 @@ sourceCompatibility = '11'
 war {
 	webAppDirectory = file('src/main/webapp')
 	manifest {
-		attributes(
-				'Main-Class': 'biz.olivight.OlivightApplication'
-			)
-		}
+		attributes "Main-Class": "your.package.classWithMain"
+	}
 }
 
 bootWar {
 	enabled=true
+	webAppDirectory = file('src/main/webapp')
+	manifest {
+		attributes "Main-Class": "your.package.classWithMain"
+	}
 }
 
 application {
-	mainClass = 'biz.olivight.OlivightApplication'
+	mainClassName = 'biz.olivight.OlivightApplication'
+	manifest {
+		attributes "Main-Class": "your.package.classWithMain"
+	}
 }
 
 springBoot {
 	mainClass = 'biz.olivight.OlivightApplication'
+	manifest {
+		attributes "Main-Class": "your.package.classWithMain"
+	}
 }
 
 
