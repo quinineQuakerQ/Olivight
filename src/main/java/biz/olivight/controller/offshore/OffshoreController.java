@@ -15,7 +15,7 @@ public class OffshoreController {
         StatisticsExtension.update();
         model.addAttribute("organisation",new Organisation());
         model.addAttribute("census",StatisticsExtension.get_statistics());
-        return "explorer/explorer";
+        return "webapp/explorer/explorer";
     }
 
 }
