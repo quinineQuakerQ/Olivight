@@ -10,39 +10,14 @@ group = 'biz.olivight'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
-war {
-	webAppDirectory = file('src/main/webapp')
-	from 'src/main/java/biz/olivight'
-	mainClassName = 'biz.olivight.OlivightApplication'
-	manifest {
-		attributes('Starter-Class': 'src/main/java/biz/olivight/biz/olivight/OlivightApplication')
-	}
+war{
+	enabled=false
 }
 
 bootWar {
 	enabled=true
-	webAppDirectory = file('src/main/webapp')
-	from 'src/main/java/biz/olivight'
-	mainClassName = 'biz.olivight.OlivightApplication'
-	manifest {
-		attributes('Starter-Class': 'src/main/java/biz/olivight/biz/olivight/OlivightApplication')
-	}
+	webAppDirectory = file('src/main')
 }
-
-application {
-	mainClassName = 'biz.olivight.OlivightApplication'
-	manifest {
-		attributes('Starter-Class': 'src/main/java/biz/olivight/biz/olivight/OlivightApplication')
-	}
-}
-
-springBoot {
-	mainClassName = 'biz.olivight.OlivightApplication'
-	manifest {
-		attributes('Starter-Class': 'src/main/java/biz/olivight/biz/olivight/OlivightApplication')
-	}
-}
-
 
 repositories {
 	mavenCentral()
