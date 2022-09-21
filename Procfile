@@ -1,1 +1,1 @@
-web: java -jar build/libs/*.war
+web: java -jar -Dserver.port=$PORT build/libs/*.war

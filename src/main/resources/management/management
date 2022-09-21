@@ -19,6 +19,7 @@ server.ssl.key-store=classpath:olivight.jks
 server.ssl.key-store-password=111Bo1at4t
 server.ssl.key-alias=olivight
 server.ssl.key-password=111Bo1at4t
+server.port=${PORT:8080}
 
 file size limit
 spring.servlet.multipart.enabled=true
